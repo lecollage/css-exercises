@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="navigation">
+    <div class="user-bx">
+        <div class="img-bx">
+            <img src="./img/image_2022-03-09_11-12-10.png" alt="img">
+        </div>
+        <p class="username">Eugene Kalashnikov</p>
+    </div>
+    <div class="menu-toggle"></div>
+    <ul class="menu">
+        <li>
+            <a href="#">
+                <ion-icon name="person-outline"></ion-icon>
+                Profile
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                Messages
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <ion-icon name="settings-outline"></ion-icon>
+                Settings
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                Exit
+            </a>
+        </li>
+    </ul>
+</div>
+<script>
+    let menuToggle = document.querySelector('.menu-toggle');
+    let navigation = document.querySelector('.navigation');
+
+    menuToggle.onclick = () => {
+        navigation.classList.toggle('active');
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
